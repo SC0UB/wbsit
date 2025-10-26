@@ -502,21 +502,27 @@ fadeInElements.forEach(element => {
      <!--Video SECTION-->
 
 
-<section style="padding: 80px 0; background-color: #f9f9f9;">
-  <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
-      <iframe 
-        src="https://player.vimeo.com/video/1130736553?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-        frameborder="0" 
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:16px;"
-        title="Real (not final)">
-      </iframe>
+<section style="padding: 40px 0; background-color: #ffffff;">
+  <div style="max-width: 900px; margin: 0 auto; padding: 0 16px;">
+    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      
+      <script src="https://fast.wistia.com/player.js" async></script>
+      <script src="https://fast.wistia.com/embed/4so1by5ai8.js" async type="module"></script>
+
+      <style>
+        wistia-player[media-id='4so1by5ai8']:not(:defined) {
+          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/4so1by5ai8/swatch');
+          display: block;
+          filter: blur(5px);
+          padding-top: 56.25%;
+        }
+      </style>
+
+      <wistia-player media-id="4so1by5ai8" aspect="1.7777777777777777"></wistia-player>
     </div>
   </div>
-  <script src="https://player.vimeo.com/api/player.js"></script>
 </section>
+
 
 
 
